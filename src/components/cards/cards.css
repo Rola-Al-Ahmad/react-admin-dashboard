@@ -1,0 +1,52 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 24px;
+    margin-top: 36px;
+}
+
+.cards li {
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+}
+
+.cards li svg {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBox:nth-child(1) li svg {
+    background: #cfe8ff98;
+    color: #3C91E6;
+}
+
+.cardBox:nth-child(2) li svg {
+    background: #f0cfff98;
+    color: #9a3ce6;
+}
+
+.cardBox:nth-child(3) li svg {
+    background: #cfffe398;
+    color: #3ce67d;
+}
+
+.cards li .text h3 {
+	font-size: 24px;
+	font-weight: 600;
+    color: #f7f7f7;
+}
+
+.cards li .text p {
+    color: #989eb3;
+}
+
+.light li .text h3,
+.light li .text p {
+    color: #000;
+}

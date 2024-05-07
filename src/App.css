@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-vertical {
+  width: 8px;
+}
+
+::-webkit-scrollbar-horizontal {
+  height: 8px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #282e38;
+}
+
+.light body{
+  background-color: white !important;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+.flexSB {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.imageCircle {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.heading {
+  padding: 20px 0;
+}
+
+.home .head-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 36px;
+}
+
+.home .project .tableBox .MuiPaper-root {
+  height: 420px;
+}
+
+.home .head-title .left h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fbfbfb;
+}
+
+.home .head-title .left .breadcrumb {
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+}
+
+.home .head-title .left .breadcrumb li {
+  color: #342E37;
+}
+
+.home .head-title .left .breadcrumb li a {
+  color: #AAAAAA;
+  pointer-events: none;
+}
+
+.home .head-title .left .breadcrumb li a.active {
+  color: #3C91E6;
+  pointer-events: unset;
+}
+
+.home .head-title .left .breadcrumb li .ChevronRightIcon {
+  color: #fbfbfb;
+}
+
+.home .head-title .btn-download {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 36px;
+  background: #3C91E6;
+  color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.cardBox {
+  background-color: #313844;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.cardHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #dee2e6;
+}
+
+.cardHeading h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.row {
+  width: 50%;
+}
+
+/*-------------light-mode---------------------*/
+.light {
+  background-color: #ebeff2;
+}
+
+.light .cardBox {
+  background-color: #fff;
+  box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
+}
+
+.light .heading span,
+.light .heading h3,
+.light .cardHeading {
+  color: #000;
+}
+
+.light .home .head-title .left h1,
+.light .home .head-title .left .breadcrumb li .ChevronRightIcon {
+  color: #342E37;
+}
+
+.inbox {
+  padding: 20px;
+}
+
+.inbox h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.email {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email.read {
+  background-color: #f9f9f9; /* Lighter background for read emails */
+}
+
+.email.unread {
+  background-color: #e0f7fa; /* Highlight unread emails */
+}
+
+.email .sender {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.email .subject {
+  flex: 1; /* Allow the subject to grow */
+}
+
+.email .preview {
+  color: #888;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+/*-------------light-mode---------------------*/
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

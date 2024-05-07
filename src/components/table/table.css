@@ -1,0 +1,108 @@
+.project {
+    margin-top: 50px;
+    display: flex;
+}
+
+.project .user {
+    flex: 2;
+}
+
+.project .table {
+    flex: 4;
+    margin-left: 30px;
+    width: 60%;
+}
+
+.mr-20{
+    margin-right: 20px;
+}
+
+td:first-child {
+	display: flex;
+	align-items: center;
+	grid-gap: 12px;
+    margin-bottom: -1px;
+}
+
+td img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+td .status {
+    font-size: 10px;
+    padding: 6px 16px;
+    color: #F9F9F9;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+td .status.Completed {
+    background: #3C91E6;
+}
+
+td .status.Process {
+    background: #13c369;
+}
+
+td .status.Pending {
+    background: #FD7238;
+}
+td .status.Canceled {
+    background: #DB504A;
+}
+
+.userBox .cardBox {
+    padding: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(89, 89, 89);
+    border-radius: 0;
+    color: #fff;
+}
+
+.light .userBox .cardBox {
+    color: #000;
+    border-bottom: 1px solid rgb(193, 193, 193);
+    box-shadow: none !important;
+}
+
+.userBox .cardBox:nth-child(1) {
+    margin-top: 30px;
+}
+
+.userBox .cardBox:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.userBox p,
+.userBox span {
+    opacity: 0.5;
+}
+
+.tableBox {
+    margin-top: 20px;
+}
+
+.light .tableContainer {
+    background-color: #fff !important;
+}
+
+@media only screen and (max-width: 890px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project .table {
+        margin-left: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1414px) {
+    .users .imageCircle {
+        width: 60px !important;
+        height: 60px !important;
+    }
+}
