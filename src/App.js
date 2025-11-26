@@ -15,7 +15,7 @@ import {
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/react-admin-dashboard">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
