@@ -1,7 +1,12 @@
+import rola from "../../assets/rolaa.jpeg";
+import batoul from "../../assets/batoul.jpeg";
+import jana from "../../assets/jana.jpeg";
+import nour from "../../assets/nour.jpeg";
+
 const data = [
     {
         id: 1,
-        cover: "./assets/rolaa.jpeg",
+        cover: rola,
         title: "Rola Al-Ahmad",
         email: "rola109@gmail.com",
         user: "Admin",
@@ -9,7 +14,7 @@ const data = [
     },
     {
         id: 2,
-        cover: "./assets/nour.jpeg",
+        cover: nour,
         title: "Nour El-Bazzal",
         email: "nour45@gmail.com",
         user: "Support Lead",
@@ -17,7 +22,7 @@ const data = [
     },
     {
         id: 3,
-        cover: "./assets/jana.jpeg",
+        cover: jana,
         title: "Jana Younes",
         email: "jana98@gmail.com",
         user: "Designer",
@@ -25,7 +30,7 @@ const data = [
     },
     {
         id: 4,
-        cover: "./assets/batoul.jpeg",
+        cover: batoul,
         title: "Batoul Mtawea",
         email: "batoul511@gmail.com",
         user: "Developer",

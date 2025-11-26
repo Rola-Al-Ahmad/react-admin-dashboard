@@ -1,35 +1,86 @@
-import React from "react"
-import "./table/table.css"
-import Common from "../common/Common"
-import Table from "@mui/material/Table"
-import TableBody from "@mui/material/TableBody"
-import TableCell from "@mui/material/TableCell"
-import TableContainer from "@mui/material/TableContainer"
-import TableHead from "@mui/material/TableHead"
-import TableRow from "@mui/material/TableRow"
-import Paper from "@mui/material/Paper"
-import styled from "styled-components"
+import React from "react";
+import "./table/table.css";
+import Common from "../common/Common";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
+import styled from "styled-components";
+
+import rola from "../assets/rolaa.jpeg";
+import batoul from "../assets/batoul.jpeg";
+import jana from "../assets/jana.jpeg";
+import nour from "../assets/nour.jpeg";
+import rolaUser from "../assets/rolaUser.jpeg";
 
 function createData(id, UserName, Image, Email, Phone, Birthdate, Status) {
-  return { id, UserName, Image, Email, Phone, Birthdate, Status }
+  return { id, UserName, Image, Email, Phone, Birthdate, Status };
 }
 
-const rows = [createData(1, "User1", "./assets/rolaa.jpeg", "user1@gmail.com", "71112236", "01/01/2001", "Released"),
-createData(2, "User2", "./assets/batoul.jpeg", "user2@gmail.com", "71112236", "26/04/2002", "Released"),
-createData(3, "User3", "./assets/jana.jpeg", "user3@gmail.com", "71112236", "16/03/2005", "Pending"),
-createData(4, "User4", "./assets/nour.jpeg", "user4@gmail.com", "71112236", "26/04/2006", "Assign"),
-createData(5, "User5", "./assets/rolaUser.jpeg", "user5@gmail.com", "71112236", "20/05/2007", "Assign")]
+const rows = [
+  createData(
+    1,
+    "User1",
+    rola,
+    "user1@gmail.com",
+    "71112236",
+    "01/01/2001",
+    "Released"
+  ),
+  createData(
+    2,
+    "User2",
+    batoul,
+    "user2@gmail.com",
+    "71112236",
+    "26/04/2002",
+    "Released"
+  ),
+  createData(
+    3,
+    "User3",
+    jana,
+    "user3@gmail.com",
+    "71112236",
+    "16/03/2005",
+    "Pending"
+  ),
+  createData(
+    4,
+    "User4",
+    nour,
+    "user4@gmail.com",
+    "71112236",
+    "26/04/2006",
+    "Assign"
+  ),
+  createData(
+    5,
+    "User5",
+    rolaUser,
+    "user5@gmail.com",
+    "71112236",
+    "20/05/2007",
+    "Assign"
+  ),
+];
 
 const TableData = () => {
   return (
     <>
-      <section className='project'>
-        <div className='table cardBox mr-20'>
-          <Common title='Users' />
-          <div className='tableBox'>
-            <TableContainer component={Paper} sx={{ boxShadow: "none", borderRadius: "none" }}>
+      <section className="project">
+        <div className="table cardBox mr-20">
+          <Common title="Users" />
+          <div className="tableBox">
+            <TableContainer
+              component={Paper}
+              sx={{ boxShadow: "none", borderRadius: "none" }}
+            >
               <Table
-                className='tableContainer'
+                className="tableContainer"
                 sx={{
                   minWidth: 650,
                   background: "#313844",
@@ -53,7 +104,7 @@ const TableData = () => {
                 <TableBody>
                   {rows.map((row) => (
                     <TableRow key={row.id}>
-                      <TableCell component='th' scope='row'>
+                      <TableCell component="th" scope="row">
                         {row.id}
                       </TableCell>
                       <UserImage>
@@ -63,7 +114,7 @@ const TableData = () => {
                       <TableCell>{row.Email}</TableCell>
                       <TableCell>{row.Phone}</TableCell>
                       <TableCell>{row.Birthdate}</TableCell>
-                      <TableCell className='status'>{row.Status}</TableCell>
+                      <TableCell className="status">{row.Status}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -73,10 +124,10 @@ const TableData = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default TableData
+export default TableData;
 
 const UserImage = styled.td`
   display: flex;
