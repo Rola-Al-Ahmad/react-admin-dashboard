@@ -1,13 +1,21 @@
 {
   "files": {
     "main.css": "/react-admin-dashboard/static/css/main.6968cffc.css",
-    "main.js": "/react-admin-dashboard/static/js/main.e08f5d60.js",
+    "main.js": "/react-admin-dashboard/static/js/main.b26199c5.js",
+    "static/media/rolaa.jpeg": "/react-admin-dashboard/static/media/rolaa.b01ea44cb1ce8414d8d2.jpeg",
+    "static/media/nour.jpeg": "/react-admin-dashboard/static/media/nour.627a29ebe711bcb08b96.jpeg",
+    "static/media/rolaUser.jpeg": "/react-admin-dashboard/static/media/rolaUser.e4867fa6c88bb06b461e.jpeg",
+    "static/media/jana.jpeg": "/react-admin-dashboard/static/media/jana.574cb5b820b29c84e5cd.jpeg",
+    "static/media/batoul.jpeg": "/react-admin-dashboard/static/media/batoul.ffe87e9e9df0c95fb8a2.jpeg",
+    "static/media/profileImage.jpeg": "/react-admin-dashboard/static/media/profileImage.60bd8573361dd05e69bb.jpeg",
+    "static/media/rolaDark.png": "/react-admin-dashboard/static/media/rolaDark.bd76ccd007569210192f.png",
+    "static/media/rola.png": "/react-admin-dashboard/static/media/rola.1048dda5c1c8db2b3df0.png",
     "index.html": "/react-admin-dashboard/index.html",
     "main.6968cffc.css.map": "/react-admin-dashboard/static/css/main.6968cffc.css.map",
-    "main.e08f5d60.js.map": "/react-admin-dashboard/static/js/main.e08f5d60.js.map"
+    "main.b26199c5.js.map": "/react-admin-dashboard/static/js/main.b26199c5.js.map"
   },
   "entrypoints": [
     "static/css/main.6968cffc.css",
-    "static/js/main.e08f5d60.js"
+    "static/js/main.b26199c5.js"
   ]
 }
