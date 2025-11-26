@@ -1,6 +1,6 @@
 ## 🧷 Admin Dashboard
 
-![Admin Dashboard preview thumbnail](public/assets/thumbnail.png)
+![Admin Dashboard preview thumbnail](src/assets/thumbnail.png)
 
 A modern, responsive **admin dashboard** built with React and Create React App, featuring analytics cards, user management, orders, and inbox messaging in a clean, dark UI.
 
